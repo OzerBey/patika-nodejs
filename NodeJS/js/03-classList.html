@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClassList</title>
+  </head>
+  <body>
+    <p></p>
+    <center>
+      <input
+        id="btnResult"
+        style="background-color: red"
+        type="button"
+        value="See The Result"
+      />
+    </center>
+    <center>
+      <button onclick="compareToNums()">İki sayıdan büyük olanı bul</button>
+    </center>
+  </body>
+  <script>
+    document
+      .querySelector("#btnResult")
+      .addEventListener("click", calculateVki);
+    let num1 = prompt("Sayı 1 gir", "100");
+    let num2 = prompt("Sayı 2 gir", "85");
+    function compareToNums() {
+      let arr = new Array();
+      arr.push(num1);
+      arr.push(num2);
+      arr.sort();
+      console.log(arr);
+      alert("sonuc: " + arr[0]);
+    }
+    function calculateVki() {
+      let pElement = document.querySelector("p");
+      let vki = 0;
+      let height = prompt("Boy gir", "1.75");
+      let weight = prompt("ağırlık gir [kg]", "85");
+      vki = weight * height ** 2;
+      if (vki < 18.5)
+        return alert(`Vücut kitle indeksiniz: ${vki}, değerleriniz düşüktür`);
+      if (vki >= 18.5 && vki <= 24.9)
+        return alert(`Vücut kitle indeksiniz: ${vki}, normal değerdesiniz`);
+      if (vki >= 25.0 && vki <= 29.9)
+        return alert(`Vücut kitle indeksiniz: ${vki}, kilolusunuz`);
+      if (vki >= 30)
+        return alert(`Vücut kitle indeksiniz: ${vki}, aşırı kilolusunuz`);
+      return alert("Girdiğiniz değerleri kontrol ediniz");
+    }
+  </script>
+</html>

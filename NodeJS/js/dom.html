@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My home page</title>
+  </head>
+  <body>
+    <h1>My home page</h1>
+    <p>Hello, I am Baran and this is my home page.</p>
+    <p>
+      Click to review my resume <a href="http://balin.me/cv.pdf">balin.me</a>.
+    </p>
+    <input id="btnClick" type="button" value="Tıkla" />
+    <script>
+      document.getElementById("btnClick").addEventListener("click", clicked);
+      function clicked() {
+        alert("butona tıkladı");
+        var a = prompt("bir değer gir", "sds");
+        var pText = document.querySelector("p");
+        pText.style.color = "red";
+      }
+    </script>
+  </body>
+</html>

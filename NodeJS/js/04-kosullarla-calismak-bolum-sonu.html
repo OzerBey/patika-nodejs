@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Grade Calculating</title>
+  </head>
+  <body>
+    <center>
+      <textarea
+        style="font-size: 50px"
+        name="sonuc"
+        id="result"
+        cols="40"
+        rows="5"
+      ></textarea>
+    </center>
+
+    <script>
+      document.body.onload = function () {
+        let examGrade = Number(prompt("Enter a your point of Exam"));
+        console.log(examGrade);
+        document.querySelector("#result").innerHTML =
+          examGrade >= 0 && examGrade <= 100
+            ? examGrade >= 90 && examGrade < 100
+              ? `AA :)${(document.getElementById("result").style.color =
+                  "green")} `
+              : examGrade >= 85 && examGrade <= 89
+              ? `BA :)${(document.getElementById("result").style.color =
+                  "green")} `
+              : examGrade >= 80 && examGrade <= 84
+              ? `BB :)${(document.getElementById("result").style.color =
+                  "green")} `
+              : examGrade >= 75 && examGrade <= 79
+              ? `CB :)${(document.getElementById("result").style.color =
+                  "green")} `
+              : examGrade >= 70 && examGrade <= 74
+              ? `CC :)${(document.getElementById("result").style.color =
+                  "green")} `
+              : examGrade >= 65 && examGrade <= 69
+              ? `DC ${(document.getElementById("result").style.color =
+                  "green")} `
+              : examGrade >= 50 && examGrade <= 64
+              ? `DD :) ${(document.getElementById("result").style.color =
+                  "green")} `
+              : `FF :( ${(document.getElementById("result").style.color =
+                  "red")} `
+            : "Yanlış aralıkta değer girdiniz!!";
+      };
+    </script>
+  </body>
+</html>
