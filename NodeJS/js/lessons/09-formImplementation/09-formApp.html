@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js lesson 9</title>
+  </head>
+  <body>
+    <form action="answer.html" method="post">
+        <input
+        type="text"
+        name="messageOfUser"
+        id="message"
+        onchange="writeValue()"
+      />
+      <br />
+      <p id="result"></p>
+      <button type="submit">Send</button>
+    </form>
+    <script>
+      var inputValue = document.querySelector("#message");
+      var result = document.querySelector("#result");
+      function writeValue() {
+        result.innerHTML = inputValue.value;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-1</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      li {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" id="userForm">
+      <div class="container mt-5">
+        <div class="mt-5 mb-3">
+          <label for="user_name">Kullanıcı Adı</label> <br />
+          <input type="text" id="user_name" placeholder="Enter your username" />
+        </div>
+
+        <div class="mb-3">
+          <label for="grade">Notunuz</label> <br />
+          <input
+            min="0"
+            type="number"
+            name="gradeOfUser"
+            id="grade"
+            placeholder="Enter your grade"
+          />
+        </div>
+
+        <button class="btn-danger" type="reset">Sifirla</button
+        ><button class="btn-success m-lg-2" onclick="Write(e)" type="submit">
+          Gonder
+        </button>
+      </div>
+    </form>
+    <ul>
+      <li id="first_val"></li>
+      <li id="second_val"></li>
+    </ul>
+    <script>
+      const userName = document.querySelector("#user_name");
+      const grade = document.querySelector("#grade");
+      const firstValue = document.querySelector("#first_val");
+      const secondValue = document.querySelector("#second_val");
+
+      function Write(e) {
+        e.preventDefault();
+        firstValue.innerHTML = userName.value;
+        secondValue.innerHTML = secondValue.value;
+      }
+    </script>
+  </body>
+</html>

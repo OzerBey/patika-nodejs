@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Answer P4ge</title>
+  </head>
+  <body>
+    <hr />
+    <p>answer here</p>
+    <hr />
+    <form onsubmit="handleSubmit(e)" method="POST" autocomplete="on">
+      <fieldset style="text-align: center">
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter your username"
+          onchange="handleChange(event)"
+        />
+        <br />
+        <br />
+
+        <input  
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+          onchange="handleChange(event)"
+        />
+        <br /><br />
+        <button type="submit">Giriş</button>
+      </fieldset>
+    </form>
+
+    <script>
+      var username;
+      var password;
+      function handleSubmit(e) {
+        e.preventDefault();
+        console.log("username:" + username + "-" + "password:" + password);
+      }
+      function handleChange(e) {
+        if (e.target.name === "username") {
+          username = e.target.value;
+        }
+        if (e.target.name === "password") {
+          password = e.target.value;
+        }
+      }
+    </script>
+  </body>
+</html>

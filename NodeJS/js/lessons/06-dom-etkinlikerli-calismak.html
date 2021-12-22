@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Events</title>
+  </head>
+  <body>
+    <input id="button" type="button" value="Tikla" />
+    <input id="button2" type="button" value="Tikla" />
+    <input type="text" name="text" id="txt_firstName" />
+    <script>
+      button.addEventListener("click", function () {
+        alert("butona tıklandı");
+      });
+      const button2 = document.querySelector("#button2");
+      button2.addEventListener("dblclick", function () {
+        document.querySelector("title").innerHTML = "Ozer was here :)";
+      });
+      //klavye etkinliği
+      const keyboard = document.querySelector("txt_firstName");
+      keyboard.addEventListener("cut", cuttingFunction);
+      function cuttingFunction(event) {
+        console.log("Etkinlik tipi : " , event.type);
+      }
+    </script>
+  </body>
+</html>

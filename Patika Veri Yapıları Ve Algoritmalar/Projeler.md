@@ -123,7 +123,7 @@ Proje 3
 <summary> Proje3 Cevap </summary>
 
 ### [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] --> Binary Search Tree
-
+Ağaçlar (Trees) **doğrusal (lineer) veri yapıları olan diziler,** bağlantılı listeler, yığınlar ve kuyruklardan farklı olarak, doğrusal olmayan **hiyerarşik** bir veri yapısıdır.
 **• Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.**
 
 ```
