@@ -1,4 +1,4 @@
-####Kuracağınız yapı tamamen size kalmış. Birkaç tane püf noktamız var.
+#### Kuracağınız yapı tamamen size kalmış. Birkaç tane püf noktamız var.
 
     Listeye boş karakter eklenemiyor. Bununla birlikte hiçbir şey yazılmadığında da aynı hatayı veriyor.
     Yazacağınız JavaScript kodu içerisinde element eklemeyi sağlayan bir fonksiyon, element silmeyi sağlayan bir fonksiyon, yapıldı işaretlenmesini sağlayan bir fonksiyon olması gerekiyor.
@@ -6,6 +6,6 @@
     Önce ana fonksiyonlar için uğraşın. Yapıldı, toast bildirim bunlar biraz daha için artistliği. Öncelikli amacını sağlıyor olması lazım.
     Yazdığınız js dosyasını projenize eklemeyi unutmayın.
 
-##*_Bonus_**
+## **_Bonus_**
 
 ***Yaptığınız yapıya Local Storage'ı da ekleyip verilerin kaybolmamasını sağlayın.***
