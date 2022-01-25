@@ -99,6 +99,13 @@ Klasik for döngüsü ile uğraşsaydık aşağıdaki gibi bir kod ortaya çıka
 //console.log(getAfterSeptemberArticles(makaleler));
 
 /**reduce function */
+//sum all the values of an array
+let sum = [0, 1, 2, 3, 4, 5].reduce(function (previousValue, currentValue) {
+  return previousValue + currentValue;
+}, 0);
+//sum is 6
+console.log("sum of an array :" + sum);
+
 const numberArray = [123, 434, 2, 5, 63242, 3];
 function reducer(previous, current, index, array) {
   const returns = previous + current;

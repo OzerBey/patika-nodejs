@@ -138,6 +138,5 @@ const menuList = (menuItems) => {
   displayMenu = displayMenu.join("");
   section.innerHTML = displayMenu;
 };
-
 menuList(menu);
 categoryList();
