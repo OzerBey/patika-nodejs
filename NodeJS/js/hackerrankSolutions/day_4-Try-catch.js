@@ -8,10 +8,11 @@ Sample Output 0
 4321 */
 function reverseString(s) {
   try {
-    s.split("*");
+    s = s.split("").reverse().join("");
   } catch (err) {
     console.log("s.split is not a function");
-    console.log(s);
   }
+
+  console.log(s);
 }
 reverseString("1234");
