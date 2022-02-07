@@ -34,6 +34,11 @@ function User({ name, surname, isLoggedIn, age, friends }) {
           ? `${name} ${surname} (${age}) is logged in successfully`
           : `You are not logged in, please try again later`}
       </h1>
+      {friends.map((friend, index) => (
+        <div key={index}>
+          {index}. {friend}
+        </div>
+      ))}
     </>
   );
 }
