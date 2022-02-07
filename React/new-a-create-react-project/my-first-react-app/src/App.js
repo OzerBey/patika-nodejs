@@ -24,6 +24,11 @@ function App() {
         isLoggedIn={true}
         age={24}
         friends={friends}
+        address={{
+          street: "Kadköy",
+          city: "Istanbul",
+          zipCode: "34000",
+        }}
       />
 
       {/* <> :fragment */}
