@@ -28,13 +28,27 @@ function App() {
       >
         Reset The Values
       </button>
-      <hr></hr> <hr></hr>
+      <hr></hr> <br></br>
       <h2 style={{ color: "red" }}>Friends</h2>
       {friends.map((friend, index) => (
         <h3 key={index}>
           {index + 1}. {friend}
         </h3>
       ))}
+      {/* //to add new item to end of the array */}
+      <button
+        style={{ backgroundColor: "green", color: "white" }}
+        onClick={() => setFriends([...friends, "new User"])}
+      >
+        Add Friend end
+      </button>
+      {/* //to add new item to begin of the array */}
+      <button
+        style={{ backgroundColor: "green", color: "white" }}
+        onClick={() => setFriends(["new User", ...friends])}
+      >
+        Add Friend to start
+      </button>
     </div>
   );
 }
