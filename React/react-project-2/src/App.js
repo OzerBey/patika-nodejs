@@ -1,9 +1,13 @@
 import { useState } from "react";
-
 function App() {
   const [name, setName] = useState("Yasin"); //useState is a hook and it takes a value as an default value
   const [age, setAge] = useState(24);
   const [friends, setFriends] = useState(["Yasin", "Ozer", "Ahmed"]);
+  const [address, setAddress] = useState({
+    street: "Halitpaşa",
+    city: "Istanbul",
+    zipCode: 34197,
+  });
 
   return (
     <div className="App">
@@ -48,6 +52,23 @@ function App() {
         onClick={() => setFriends(["new User", ...friends])}
       >
         Add Friend to start
+      </button>
+      {/* address defination */}
+      <hr></hr>
+      <h2 style={{ color: "red" }}>Address</h2>
+      <div>
+        <h3>Street: {address.street}</h3>
+        <h3>City: {address.city}</h3>
+        <h3>Zip Code: {address.zipCode}</h3>
+      </div>
+      {/* //manipulation to the object */}
+      <button
+        style={{ backgroundColor: "green", color: "white" }}
+        onClick={() =>
+          setAddress({ ...address, street: "Yıldız", zipCode: 34000 })
+        }
+      >
+        Change The Address
       </button>
     </div>
   );
