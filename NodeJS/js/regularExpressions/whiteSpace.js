@@ -5,7 +5,12 @@ let whiteSpace = "Whitespace. Whitespace everywhere!";
 let nonSpaceRegex = /\S/g;
 whiteSpace.match(nonSpaceRegex).length;
 
-//for example
+//for example for whiteSpace
+let whiteSpace = "Whitespace. Whitespace everywhere!";
+let nonSpaceRegex = /\s/g;
+whiteSpace.match(nonSpaceRegex).length;
+
+//for example for non whitespace
 
 let whiteSpace = "Whitespace. Whitespace everywhere!";
 let nonSpaceRegex = /\S/g;
