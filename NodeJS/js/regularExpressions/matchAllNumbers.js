@@ -16,4 +16,5 @@ console.log("The length of numbers  are  " + result);
 let movieName1 = "2001: A Space Odyssey";
 let noNumRegex1 = /\D/g; // Change this line
 let result1 = movieName1.match(noNumRegex1);
+
 console.log("resul1:" + result1);
