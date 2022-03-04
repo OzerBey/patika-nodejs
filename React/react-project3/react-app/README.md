@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with Create React App3
+
+This react app created for useState using
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
