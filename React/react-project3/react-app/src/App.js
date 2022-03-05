@@ -6,6 +6,13 @@ function App() {
   useEffect(() => {
     console.log("The state updated");
   });
+  if (true) {
+    console.log("Hi There");
+  }
+  //we can use one or more useEffect to run code on component mount and unmount
+  useEffect(() => {
+    console.log("Component Mounted", []); //[] is a default value for dependency arrays
+  });
 
   return (
     <div className="App">
